@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>Dashboard</h1>
+      <div class="user-info">
+        <span>Welcome, Admin</span>
+        <button class="logout-button" id="logoutButton">Logout</button>
+      </div>
+    </header>
+
+    <!-- Sidebar and Main Content Container -->
+    <div class="container">
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <nav>
+          <a href="/dashboard.html">Dashboard</a>
+          <a href="/adminManageRoom.html">Rooms ▼</a>
+          <a href="/adminServiceManagement.html">Manage Services ▼</a>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="card-container">
+          <div class="card">
+            <h2>Total Rooms</h2>
+            <p>42</p>
+          </div>
+          <div class="card">
+            <h2>Active Services</h2>
+            <p>18</p>
+          </div>
+          <div class="card">
+            <h2>Revenue</h2>
+            <p>1,200,000 VND</p>
+          </div>
+          <div class="card">
+            <h2>New Bookings</h2>
+            <p>12</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Hàm logout
+      function logout() {
+        // Xóa authToken khỏi localStorage
+        localStorage.removeItem("authToken");
+        localStorage.removeItem("username"); // Xóa luôn username nếu có
+        // Chuyển hướng về trang đăng nhập
+        window.location.href = "login.html";
+      }
+
+      // Gán sự kiện cho nút logout
+      document.getElementById("logoutButton").addEventListener("click", logout);
+    </script>
+  </body>
+</html>
