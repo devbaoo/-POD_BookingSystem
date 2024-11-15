@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,17 +11,13 @@ body {
   background-color: #f3f4f6;
 }
 
-.container {
-  display: flex;
-  height: 100vh;
-}
-
 .sidebar {
   background-color: #1f2937;
   color: white;
   width: 250px;
   padding: 20px;
-  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .sidebar.closed {
@@ -24,11 +26,12 @@ body {
 /* Header */
 .header {
   background-color: #4a90e2;
-  color: #fff;
+  color: black;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px; /* Đảm bảo chiều cao header nhất quán */
 }
 
 .header h1 {
@@ -57,6 +60,11 @@ body {
 
 .logout-button:hover {
   background-color: #555;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
 }
 .sidebar a {
   display: block;
