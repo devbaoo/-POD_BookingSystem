@@ -1,54 +1,14 @@
 /* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+
 
 /* Header */
-.header {
-  background-color: #4a90e2;
-  color: black;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header h1 {
-  font-size: 24px;
-}
 
-.user-info {
-  display: flex;
-  align-items: center;
-}
 
-.user-info span {
-  margin-right: 15px;
-  font-size: 14px;
-}
 
-.logout-button {
-  padding: 8px 12px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.logout-button:hover {
-  background-color: #555;
-}
 
 /* Sidebar and Main Content Container */
-.container {
-  display: flex;
-  height: calc(100vh - 60px); /* Adjusted for header height */
-}
 
 /* Sidebar styling */
 .sidebar {
@@ -74,47 +34,6 @@
   background-color: #374151;
 }
 
-/* Main Content */
-.main-content {
-  flex: 1; /* Take remaining width */
-  padding: 20px;
-  background-color: #f4f4f4;
-  overflow-y: auto;
-}
-
-/* Card Container */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 24px;
-  font-weight: bold;
-  color: #4a90e2;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {
@@ -124,11 +43,6 @@
     padding-top: 0;
   }
 
-  .main-content {
-    margin-left: 0;
-  }
+  
 
-  .card-container {
-    grid-template-columns: 1fr;
-  }
 }
