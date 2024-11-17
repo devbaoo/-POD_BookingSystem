@@ -21,7 +21,6 @@ body {
   align-items: center;
 }
 
-
 .header h1 {
   font-size: 24px;
 }
@@ -50,6 +49,31 @@ body {
   background-color: #555;
 }
 
+.modal-content p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h3 {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+.status-confirm {
+  color: green;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
 /* Container for sidebar and main content */
 .container {
   display: flex;
