@@ -333,3 +333,15 @@ input[type="text"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.sidebar a:hover {
+  background-color: #374151;
+}
+
+.sidebar-dropdown {
+  display: none;
+  padding-left: 20px;
+}
+
+.sidebar-dropdown.active {
+  display: block;
+}
